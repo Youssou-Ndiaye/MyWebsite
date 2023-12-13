@@ -1,0 +1,47 @@
+body {
+  font-family: monospace;
+  background: linear-gradient(
+    to left bottom,
+    white,
+    rgb(122, 183, 163),
+    rgb(52, 136, 118)
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 450px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  text-align: center;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+}
+.temp-container {
+  text-align: center;
+  margin: 1.5rem;
+  font-weight: bold;
+}
+label {
+  display: block;
+}
+input {
+  border: 0.2rem solid;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  outline: none;
+  color: rgb(12, 94, 57);
+}
