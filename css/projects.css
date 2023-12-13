@@ -1,0 +1,34 @@
+.proj-img {
+  max-width: 10rem;
+  border-radius: 15px;
+  box-shadow: 1rem 1rem 1rem gray;
+  margin-bottom: 1rem;
+}
+#projects h3 {
+  font-weight: bold;
+  color: rgb(58, 65, 145);
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.projects-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  margin: 2rem;
+}
+.projects-link :hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+.project-description {
+  max-width: 10rem;
+  text-align: center;
+}

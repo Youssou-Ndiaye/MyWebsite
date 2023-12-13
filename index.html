@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css">
+   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/transitions.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+  </head>
+  <body>
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    
+
+
+    <div class="container d-flex p-2 flex-row-reverse ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top z-index-6">
+        <a class="navbar-brand" href="#">Youssou Ndiaye</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
+    <section id="hero" >
+      <div class="section_pic-container hidden">
+        <img src="./assets/yn4.jpeg" alt="hero image" />
+      </div>
+      <div class="section__text hidden">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Youssou</h1>
+        <p class="section__text__p2">Front end developer</p>
+        <div class="btn-container">
+          <a
+            href="./assets/myCv.docx"
+            class="btn "
+            download="./assets/myCv.docx"
+          >
+            Download CV
+          </a>
+          <button class="btn btn-color-1 text-white bg-dark" onclick="location.href='./#contact'">
+            Contact me
+          </button>
+        </div>
+        <div class="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="my linkdn profile"
+            class="icon"
+            onclick="location.href='http/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="my linkdn profile"
+            class="icon"
+            onclick="location.href='http/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" >
+      <p class="section__text__p1 hidden">Get to know more</p>
+      <h1 class="title hidden">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container hidden">
+          <img
+            src="./assets/yn4.jpeg"
+            alt="profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container hidden">
+              <blockquote>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti ipsum magnam dolorem blanditiis facere! Molestias
+                voluptatibus aliquam odio voluptas tenetur quidem temporibus,
+                laudantium harum praesentium illo quos eaque sapiente sit
+                numquam debitis. Praesentium expedita est necessitatibus
+                aspernatur porro minima ipsum laboriosam commodi sit labore
+                molestias culpa tempore quos, cupiditate fugiat eaque velit odio
+                optio laudantium quia amet distinctio eius provident. Porro
+                reiciendis ullam soluta voluptatem aperiam modi facilis, qui,
+                ipsa natus doloribus consequuntur! Est praesentium ut illo
+                cumque, voluptatibus adipisci doloribus nesciunt amet
+                consequuntur ad iste quam architecto, quas mollitia. Ratione
+                quos enim dolore tempore itaque et culpa ut repellendus.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon-container">
+        <i class="fa-brands fa-html5 fa-4x log hidden"></i>
+        <i class="fa-brands fa-css3-alt fa-4x log hidden"></i>
+        <i class="fa-brands fa-js fa-4x log hidden"></i>
+        <i class="fa-brands fa-react fa-4x log hidden"></i>
+        <i class="fa-brands fa-git-alt fa-4x log hidden"></i>
+        <i class="fa-brands fa-bootstrap fa-4x log hidden"></i>
+      </div>
+      <i
+        class="fa-solid fa-arrow-down-long fa-3x arrow up-down"
+        onclick="location.href='./#projects'"
+      ></i>
+    </section>
+    <section id="projects" class="hidden" >
+      <p class="section__text__p1">have a look at my recent</p>
+      <h1 class="title">projects</h1>
+      <div class="projects-container">
+        <a href='./temperature-converter/index.html' class='projects-link ' title='go to ptoject' target="_blank" >
+          
+            <img src='./assets/weather.jpg' alt='project' class="proj-img" ></img>
+          
+          
+          <h3 class="project-name">Temperature </h3>
+          <p class="project-description">
+            Convert temperature measurements from Celsius to Fahrenheight or Kelvin and Vice-Versa
+          </p>
+            </a>
+        <a href='./digital cllock/index.html' class='projects-link' title='go to ptoject' target="_blank">
+              <img src='./assets/digital-clock.jpg' alt='project' class="proj-img" ></img>
+              <h3 class="project-name">Digital Clock </h3>
+              <p class="project-description">
+                Just like a regular clock, This app records the Live Date and Time as shown on your computer
+              </p>
+                </a>
+        <a href='http://localhost:5173/' class='projects-link' title='go to ptoject' >
+              <img src='./assets/expenses.jpg' alt='project' class="proj-img" ></img>
+              <h3 class="project-name">Expense Tracker </h3>
+              <p class="project-description">
+                Perfect App to track your monthly expenses. fully Interractive React application
+              </p>
+                </a>
+        <a href='./islam/islam.html' class='projects-link' title='go to ptoject' target="_blank">
+              <img src='./assets/islam.jpg' alt='project' class="proj-img" ></img>
+              <h3 class="project-name">Islamic quotes <br>generator </h3>
+              <p class="project-description">
+                Just like a regular clock, This app records the Live Date and Time as shown on your computer
+              </p>
+                </a>
+        <a href='#' class='projects-link' title='go to ptoject' >
+              <img src='./assets/digital-clock.jpg' alt='project' class="proj-img" ></img>
+              <h3 class="project-name">In progress.. </h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptatum.
+              </p>
+                </a>
+        <a href='#' class='projects-link' title='go to ptoject' >
+              <img src='./assets/digital-clock.jpg' alt='project' class="proj-img" ></img>
+              <h3 class="project-name">In Progress... </h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, iste!
+              </p>
+                </a>
+         
+      </div>
+    </section>
+    <section id="contact" class="hidden">
+      <p class="section__text__p1">get in touch</p>
+      <h1 class="title">contact me</h1>
+      <div class="contact-wrapper">
+        <h2>Email me</h2>
+        <a href="mailto:Youssou467@icloud.com">
+
+          <i  class="fa-solid fa-envelope fa-10x up-down"></i>
+        </a>
+      </div>
+
+      <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+    </div>
+      
+    </section>
+    <script defer src="script.js">
+     
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

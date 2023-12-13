@@ -1,0 +1,64 @@
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translatex(0);
+}
+.log:nth-child(2) {
+  transition-delay: 200ms;
+}
+.log:nth-child(3) {
+  transition-delay: 400ms;
+}
+.log:nth-child(4) {
+  transition-delay: 600ms;
+}
+.log:nth-child(5) {
+  transition-delay: 800ms;
+}
+.log:nth-child(6) {
+  transition-delay: 1s;
+}
+
+/*spinner*/
+.spinner-wrapper {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.spinner-border {
+  font-size: 5rem;
+}
+/*up and down animation*/
+.up-down {
+  animation-name: up-down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
